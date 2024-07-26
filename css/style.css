@@ -1,0 +1,324 @@
+/* Aturan umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+.header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.h1-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h1-img h1 {
+    margin: 0;
+}
+
+.h1-img img {
+    width: 5%;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav {
+    padding: 10px 20px;
+    display: block;
+    text-align: right;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 5px;
+}
+
+.sliders {
+    width: 100%;
+    padding-bottom: 19%;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    height: 50vh;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    margin-top: 10px;
+    font-size: 24px;
+    display: block;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+.a {
+    display: flex;
+    width: auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+}
+
+#produk-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 40px;
+    background-color: #fff;
+}
+
+#produk-container figure {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#produk-container img {
+    width: 100%;
+    height: 55vh;
+    display: block;
+    margin: 0 auto;
+}
+
+#produk-container figcaption {
+    text-align: center;
+}
+
+#categori-motor h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+#produk-container button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#produk-container button:hover {
+    background-color: #575757;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.footer-column {
+    margin: 10px;
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-column a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-help-center {
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+}
+
+.help-center {
+    border-radius: 30px;
+    width: 26%;
+    background-color: rgba(204, 9, 9, 0.936);
+    display: block;
+    justify-content: start;
+}
+
+.help-center p {
+    margin: 5px 25px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+footer address {
+    background-color: #000;
+    text-align: center;
+}
+
+/* Media queries */
+
+@media (max-width:1024px) {
+    #produk-container figure {
+        width: 28%;
+    }
+
+    #produk-container img {
+        height: 60vh;
+        padding: 10px;
+    }
+
+    .help-center {
+        width: 31.5%;
+    }
+}
+
+@media (max-width:768px) {
+    .h1-img img {
+        width: 7%;
+    }
+
+    .sliders {
+        width: 100%;
+        padding-bottom: 12%;
+    }
+
+    #produk-container img {
+        height: 35vh;
+    }
+
+    footer .footer-container {
+        display: flex;
+    }
+
+    .footer-column {
+        width: auto;
+    }
+
+    .help-center {
+        width: 37%;
+    }
+
+    .help-center p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:426px) {
+    .h1-img img {
+        width: auto;
+        height: 10vh;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        text-align: center;
+        /* margin: 10px 5px; */
+        padding: 5px;
+    }
+
+    .sliders {
+        padding-bottom: 0;
+    }
+
+    .slider {
+        height: 40vh;
+    }
+
+    .slide img {
+        height: 40vh;
+    }
+
+    #produk-container figure {
+        padding: 10px;
+        margin: 10px;
+        width: 38%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-size: x-small;
+    }
+
+    #produk-container img {
+        height: 35vh;
+    }
+
+    #produk-container button {
+        font-size: small;
+        border: none;
+        padding: 0 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .footer-container{
+        display: flex;
+        width: 100%;
+    }
+
+    .footer-column h3 {
+        width: 100%;
+    }
+    
+    .footer-column a {
+        /* margin-bottom: 5px; */
+        font-size: 0.5em;
+        width: 100px;
+    }
+
+    .help-center {
+        width: 57%;
+    }
+
+    .help-center p {
+        font-size: 0.8em;
+    }
+}

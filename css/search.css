@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  #f9f9f9;
+    line-height: 1.6;
+}
+
+.header{
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.h1-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h1-img h1 {
+    margin: 0;
+}
+
+.h1-img img{
+    width: 5%;
+}
+
+
+.header nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav{
+    padding: 10px 20px;
+    display: block;
+    text-align: right;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 5px;
+}
+
+.sliders{
+    width: 100%;
+    padding-bottom: 18%;
+    position: relative;
+}
+
+.slider{
+    width: 100%;
+    height: 50vh;
+}
+
+.slide img{
+    width: 100%;
+    height: auto;
+
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 40px;
+    background-color: #fff;
+}
+
+#content figure {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#content img {
+    width: 100%;
+    height: 50vh;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+#content figcaption {
+    text-align: center;
+}
+
+#content h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+#content button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.categori-motor button:hover {
+    background-color: #575757;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: auto;
+    padding:0;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.footer-column {
+    margin: 10px;
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-column a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-help-center {
+    margin:0;
+    padding: 10px;
+    background-color: #333;
+}
+
+.help-center {
+    border-radius: 30px;
+    width: 26%;
+    background-color: rgba(204, 9, 9, 0.936);
+    display: block;
+    justify-content: start;
+
+}
+
+.help-center p {
+    margin: 5px 25px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer address  {
+    background-color: #000;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    #content figure {
+        width: 28%;
+    }
+
+    #content img {
+        height: 60vh;
+        padding: 10px;
+    }
+    .help-center {
+        width: 31.5%;
+    }
+}
+
+@media (max-width:768px) {
+    .h1-img img {
+        width: 7%;
+    }
+    #content img {
+        height: 35vh;
+    }
+
+    footer .footer-container {
+        display: flex;
+    }
+
+    .footer-column {
+        width: auto;
+    }
+
+    .help-center {
+        width: 37%;
+    }
+
+    .help-center p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:426px) {
+    .h1-img img {
+        width: auto;
+        height: 8vh;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+    }
+
+
+    #content figure {
+        padding: 10px;
+        margin: 10px;
+        width: 38%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-size: x-small;
+    }
+
+    #content img {
+        height: 35vh;
+    }
+
+    #content button {
+        font-size: small;
+        border: none;
+        padding: 0 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .footer-container{
+        display: flex;
+        width: 100%;
+    }
+
+    .footer-column h3 {
+        width: 100%;
+    }
+    
+    .footer-column a {
+        /* margin-bottom: 5px; */
+        font-size: 0.5em;
+        width: 100px;
+    }
+
+    .help-center {
+        width: 57%;
+    }
+
+    .help-center p {
+        font-size: 0.8em;
+    }
+}
